@@ -1,6 +1,6 @@
 {
   "name": "session-id-token",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An utility library for generating digitally signed and base64 encoded session token based on cryptographically random session Id",
   "main": "index.js",
   "scripts": {
