@@ -26,7 +26,7 @@ If you are interested in this session token option, check out this library: http
 
 <img width="600px" src="./session-id-token.png">
 
-The second option for session token is **digitally signed** and **base64 encoded** session token based on **cryptographically random** session ID
+The second option for session token is **digitally signed** and **base64 encoded** session token based on **cryptographically random** session ID. It serves as a **key** to unlock our session store which stores our actual session state data
 
 - Digitally signed: The token not only contains this cryptographically random session ID, but also a **digital signature** that the server can use to verify that the ID hasn't been modified since it was signed. Typically the token is a combination of the first 32 bytes of the random session ID and the remaining bytes for the digital signature
 - Base64 encoded: a technique for translating binary bytes that might be well beyond the ASCII range into distinct ASCII characters. Cryptographically random IDs and digital signatures are both binary data, but HTTP wants plain text, so we need to **encode** the binary data into base64 text
