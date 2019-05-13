@@ -1,7 +1,7 @@
 {
   "name": "session-id-token",
   "version": "1.0.1",
-  "description": "An utility library for generating digitally signed and base64 encoded session token based on cryptographically random session Id",
+  "description": "An utility library for generating digitally signed and base64 encoded session token based on cryptographically random session ID",
   "main": "index.js",
   "scripts": {
     "test": "jest"
