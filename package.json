@@ -1,0 +1,29 @@
+{
+  "name": "session-id-token",
+  "version": "1.0.0",
+  "description": "An utility library for generating digitally signed and base64 encoded session token based on cryptographically random session Id",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zicodeng/session-id-token.git"
+  },
+  "keywords": [
+    "session",
+    "token",
+    "session token",
+    "session id",
+    "session id token"
+  ],
+  "author": "Zico Deng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zicodeng/session-id-token/issues"
+  },
+  "homepage": "https://github.com/zicodeng/session-id-token#readme",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}
