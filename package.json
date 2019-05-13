@@ -13,6 +13,10 @@
   "keywords": [
     "session",
     "token",
+    "auth",
+    "authentication",
+    "jwt",
+    "json web token",
     "session token",
     "session id",
     "session id token"
