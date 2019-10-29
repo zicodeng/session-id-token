@@ -50,9 +50,9 @@ Cons:
 This package has 0 dependency :)
 
 ```js
-import { createSessionToken, validateSessionToken } from 'session-id-token';
+import { generateSessionToken, validateSessionToken } from 'session-id-token';
 
 const SIGNING_KEY = 'My secret';
-const sessionToken = createSessionToken(SIGNING_KEY); // returns string
+const sessionToken = generateSessionToken(SIGNING_KEY); // returns string
 const isValid = validateSessionToken(sessionToken); // returns boolean
 ```

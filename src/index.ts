@@ -4,7 +4,7 @@ import crypto from 'crypto';
 const idLength = 32;
 
 /**
- * Create a digitally-signed session ID (a.k.a session token).
+ * Generate a digitally-signed session ID (a.k.a session token).
  * This is a base64 URL encoded string created from a byte slice
  * where the first `idLength` bytes are crytographically random
  * bytes representing the unique session ID, and the remaining bytes
@@ -14,7 +14,7 @@ const idLength = 32;
  * |...32 crypto random bytes...|HMAC hash of those bytes|
  * +-----------------------------------------------------+
  */
-export const createSessionToken = (signingKey: string): string => {
+export const generateSessionToken = (signingKey: string): string => {
   if (!signingKey) {
     throw new Error('Signing key is required');
   }
@@ -39,7 +39,7 @@ export const createSessionToken = (signingKey: string): string => {
 };
 
 /**
- * Validates session token string,
+ * Validate session token string,
  * using the `signingKey` as the HMAC signing key
  */
 export const validateSessionToken = (
