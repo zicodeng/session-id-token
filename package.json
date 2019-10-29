@@ -1,8 +1,28 @@
 {
   "name": "session-id-token",
-  "version": "0.1.0",
-  "license": "MIT",
   "author": "Zico Deng",
+  "version": "1.0.3",
+  "license": "MIT",
+  "description": "An utility library for generating digitally signed and base64 encoded session token based on cryptographically random session ID",
+  "homepage": "https://github.com/zicodeng/session-id-token#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zicodeng/session-id-token.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zicodeng/session-id-token/issues"
+  },
+  "keywords": [
+    "session",
+    "token",
+    "auth",
+    "authentication",
+    "jwt",
+    "json web token",
+    "session token",
+    "session id",
+    "session id token"
+  ],
   "main": "dist/index.js",
   "module": "dist/session-id-token.esm.js",
   "typings": "dist/index.d.ts",
@@ -15,7 +35,6 @@
     "test": "tsdx test",
     "lint": "tsdx lint"
   },
-  "peerDependencies": {},
   "husky": {
     "hooks": {
       "pre-commit": "tsdx lint"
