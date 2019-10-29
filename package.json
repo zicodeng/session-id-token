@@ -27,7 +27,8 @@
   "module": "dist/session-id-token.esm.js",
   "typings": "dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "session-id-token.png"
   ],
   "scripts": {
     "start": "tsdx watch",
