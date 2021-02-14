@@ -54,5 +54,5 @@ import { generateSessionToken, validateSessionToken } from 'session-id-token';
 
 const SIGNING_KEY = 'My secret';
 const sessionToken = generateSessionToken(SIGNING_KEY); // returns string
-const isValid = validateSessionToken(sessionToken); // returns boolean
+const isValid = validateSessionToken(sessionToken, SIGNING_KEY); // returns boolean
 ```
